@@ -3,4 +3,6 @@
 ## KI
 
 ChatGPT benutzt um zu bestimmen wie ich routing fur die 10 projekte machen soll  
-auch benutzt zum wissen wie ich header und footer xxxxx xxxx  
+auch benutzt zum wissen wie ich header und footer xux xxlx sxxtxx axxxixen xxxx  
+
+Copilot fur header und footer styles  
