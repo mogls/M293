@@ -5,5 +5,5 @@ function loadHTML(id, url) {
         .catch((err) => console.error(err));
 }
 
-loadHTML("header-template", "hf/header.html");
-loadHTML("footer-template", "hf/footer.html");
+loadHTML("header-template", "./hf/header.html");
+loadHTML("footer-template", "./hf/footer.html");
