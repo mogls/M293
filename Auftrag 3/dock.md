@@ -9,6 +9,8 @@ Copilot fur header und footer styles
 
 use `window.<ownFunc>` to make function accessible through a script tag  
 
+ChatGPT fur dynamische Laden von js Skripts  
+
 Copilot eher fur programmierung geeignet  
 KIs sind gut fur eher kleinere projekte wie dieser aber ich personlich mag dies nicht zu nutzen
 
