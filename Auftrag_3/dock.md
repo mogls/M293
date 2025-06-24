@@ -17,3 +17,5 @@ KIs sind gut fur eher kleinere projekte wie dieser aber ich personlich mag dies 
 1. weil die viele fehler machen  
 2. es wird dann viel code geben, wo ich weiss nicht was es macht  
 3. ich programmiere weil ich mag probleme zu losen, wenn KI dies fur mich macht, dann gibt es kein sinn mehr  
+
+Weil ich CSS sehr nervig finde, ich habe es fiel dafur benutzt  
