@@ -14,9 +14,6 @@ function loadProjectScript() {
         }
 
         document.head.appendChild(script)
-
-    } else {
-        container.innerHTML = "<h1>Project Not Found</h1>";
     }
 }
 

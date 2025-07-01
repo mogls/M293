@@ -10,8 +10,15 @@ async function loadHTML(id, url) {
 async function loadTemplateWithPath(path) {
     await loadHTML("header-template", `${path}/hf/header.html`);
     loadHTML("footer-template", `${path}/hf/footer.html`);
-    document.getElementById("home").href = `${path}/`;
-    document.getElementById("contact").href = `${path}/contact`;
+    const headerLinks = document.querySelectorAll("header a");
+    for (var i = 0; i < headerLinks.length; i++) {
+        const link = headerLinks[i]
+        if (link.id === "home") {
+            link.href = `${path}/`;
+        } else {
+            link.href = `${path}/${link.id}`;
+        }
+    }
 }
 
 window.loadTemplateWithPath = loadTemplateWithPath;
