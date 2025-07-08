@@ -1,12 +1,16 @@
 body {
     font-size: 1.2rem;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
 }
 
 main {
     margin-right: 1vw;
     margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 header,
@@ -107,6 +111,47 @@ footer,
         width: 80%;
         height: auto;
     }
+}
+
+/* Center all content in the main area and project previews */
+.project-preview-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+}
+
+.project-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem;
+    max-width: 220px;
+    transition: box-shadow 0.2s;
+}
+
+.project-preview:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+.project-preview-img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.7rem;
+}
+
+.project-preview-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 900px) {
