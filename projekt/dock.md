@@ -25,3 +25,7 @@ Wie previews zu generalisieren, um dies beide in projects und in home einfach nu
 Wie anzahl files in einer ordner zu zahlen
 
 filter mit copilot gemacht
+
+Ich finde Copilot und Windsurf AI ziemlich ahnlich, ich nutze aber lieber VSCode weil ich mehr erfahrung damit habe.  
+
+Ich nutze lieber KI nur als ein zweiter Google falls meine suche zu spezifisch oder lange gehen wurde. Ich mag ein guter uberblick uber mein code-base haben, oder mindestens uber den Code welche ich geschrieben habe.  
