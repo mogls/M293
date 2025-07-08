@@ -39,7 +39,7 @@ async function countFiles(dir) {
 }
 
 async function fetchAllProjects() {
-    const previewCount = await countFiles("./previews/");
+    const previewCount = await countFiles("./previews");
     const projects = document.getElementById("projects");
     for (let i = 1; i <= previewCount; i++) {
         await fetch(`./previews/preview${i}.html`)
