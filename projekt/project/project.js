@@ -17,38 +17,19 @@ function loadProjectScript() {
     }
 }
 
-async function countFiles(dir) {
-    try {
-        const response = await fetch(dir);
-        if (!response.ok) {
-            throw new Error("Failed to fetch directory listing");
-        }
-        const text = await response.text();
-        // Create a temporary DOM to parse the directory listing
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = text;
-        // Find all links ending with .html (assuming previews are .html files)
-        const links = Array.from(tempDiv.querySelectorAll("a")).filter((link) =>
-            link.getAttribute("href").endsWith(".html")
-        );
-        return links.length;
-    } catch (err) {
-        console.error(err);
-        return 0;
-    }
-}
-
 async function fetchAllProjects() {
-    const previewCount = await countFiles("./previews");
     const projects = document.getElementById("projects");
-    for (let i = 1; i <= previewCount; i++) {
-        await fetch(`./previews/preview${i}.html`)
-            .then((response) => {
-                console.log(response);
-                return response.text();
-            })
-            .then((data) => (projects.innerHTML += data))
-            .catch((err) => console.log(err));
+    let i = 1;
+    while (true) {
+        try {
+            const response = await fetch(`./previews/preview${i}.html`);
+            if (!response.ok) break;
+            const data = await response.text();
+            projects.innerHTML += data;
+            i++;
+        } catch (err) {
+            break;
+        }
     }
 }
 
