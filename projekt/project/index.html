@@ -5,66 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project</title>
         <link rel="stylesheet" href="../styles.css" />
-        <script src="../hf.js">
-        </script>
+        <link rel="stylesheet" href="project.css" />
+        <script src="../hf.js"></script>
         <script defer src="project.js"></script>
     </head>
     <body>
         <div id="header-template"></div>
-        <main id="project-view">
-            <h2>Projects</h2>
-            <section class="projects-section">
-                <div class="project">
-                    <a href="#/1">Project 1</a>
-                    <img src="../public/project_1.jpg" alt="project 1">
-                    <details>My first project</details>
-                </div>
-                <div class="project">
-                    <a href="#/2">Project 2</a>
-                    <img src="../public/project_2.jpg" alt="project 2">
-                    <details>My second project</details>
-                </div>
-                <div class="project">
-                    <a href="#/3">Project 3</a>
-                    <img src="../public/project_3.jpg" alt="project 3">
-                    <details>My third project</details>
-                </div>
-                <div class="project">
-                    <a href="#/4">Project 4</a>
-                    <img src="../public/project_4.jpg" alt="project 4">
-                    <details>My fourth project</details>
-                </div>
-                <div class="project">
-                    <a href="#/5">Project 5</a>
-                    <img src="../public/project_5.jpg" alt="project 5">
-                    <details>My fifth project</details>
-                </div>
-                <div class="project">
-                    <a href="#/6">Project 6</a>
-                    <img src="../public/project_6.jpg" alt="project 6">
-                    <details>My sixth project</details>
-                </div>
-                <div class="project">
-                    <a href="#/7">Project 7</a>
-                    <img src="../public/project_7.jpg" alt="project 7">
-                    <details>My seventh project</details>
-                </div>
-                <div class="project">
-                    <a href="#/8">Project 8</a>
-                    <img src="../public/project_8.jpg" alt="project 8">
-                    <details>My eighth project</details>
-                </div>
-                <div class="project">
-                    <a href="#/9">Project 9</a>
-                    <img src="../public/project_9.jpg" alt="project 9">
-                    <details>My ninth project</details>
-                </div>
-                <div class="project">
-                    <a href="#/10">Project 10</a>
-                    <img src="../public/project_10.jpg" alt="Project 10">
-                    <details>My tenth project</details>
-                </div>
-            </section>
+        <main id="project-view" class="project-view">
+            <div class="projects-header">
+                <h2>Projects</h2>
+                <label for="tag-filter">Filter by tag:</label>
+                <select id="tag-filter" class="tag-filter" onchange="filterProjectsByTag()">
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <section id="projects" class="projects-section"></section>
         </main>
         <div id="footer-template"></div>
         <script>

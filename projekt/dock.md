@@ -19,3 +19,9 @@ KIs sind gut fur eher kleinere projekte wie dieser aber ich personlich mag dies 
 3. ich programmiere weil ich mag probleme zu losen, wenn KI dies fur mich macht, dann gibt es kein sinn mehr  
 
 Weil ich CSS sehr nervig finde, ich habe es fiel dafur benutzt  
+
+Wie previews zu generalisieren, um dies beide in projects und in home einfach nuzten zu konnen
+
+Wie anzahl files in einer ordner zu zahlen
+
+filter mit copilot gemacht
